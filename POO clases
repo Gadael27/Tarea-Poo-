@@ -1,1 +1,134 @@
 
+public class Automovil {
+
+    private String marca;
+
+    private String modelo;
+
+    private int año;
+
+    private int velocidadActual;
+
+    
+
+    public Automovil() {}
+
+    
+
+    public Automovil(String marca, String modelo, int año, int velocidadActual) {
+
+        this.marca = marca;
+
+        this.modelo = modelo;
+
+        this.año = año;
+
+        this.velocidadActual = velocidadActual;
+
+    }
+
+    
+
+    public String getMarca() {
+
+        return marca;
+
+    }
+
+    
+
+    public void setMarca(String marca) {
+
+        this.marca = marca;
+
+    }
+
+    
+
+    public String getModelo() {
+
+        return modelo;
+
+    }
+
+    
+
+    public void setModelo(String modelo) {
+
+        this.modelo = modelo;
+
+    }
+
+    
+
+    public int getAño() {
+
+        return año;
+
+    }
+
+    
+
+    public void setAño(int año) {
+
+        this.año = año;
+
+    }
+
+    
+
+    public int getVelocidadActual() {
+
+        return velocidadActual;
+
+    }
+
+    
+
+    public void setVelocidadActual(int velocidadActual) {
+
+        this.velocidadActual = velocidadActual;
+
+    }
+
+    
+
+    public void acelerar() {
+
+        velocidadActual += 10;
+
+        System.out.println("Acelerando... Velocidad actual: " + velocidadActual + " km/h");
+
+    }
+
+    
+
+    public void frenar() {
+
+        velocidadActual -= 10;
+
+        System.out.println("Frenando... Velocidad actual: " + velocidadActual + " km/h");
+
+    }
+
+    
+
+    public void mostrarInformacion() {
+
+        System.out.println("Marca: " + marca + ", Modelo: " + modelo + ", Año: " + anio + ", Velocidad actual: " + velocidadActual + " km/h");
+
+    }
+
+    
+
+    @Override
+
+    public String toString() {
+
+        return "Automovil [marca=" + marca + ", modelo=" + modelo + ", año=" + año + ", velocidadActual=" + velocidadActual
+
+                + "]";
+
+    }
+
+}
